@@ -1,0 +1,14 @@
+{
+  "name": "litelement-inheritance",
+  "version": "1.0.0",
+  "description": "webcomponent to play with litelement and inheritance",
+  "main": "index.js",
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "latest"
+  }
+}
