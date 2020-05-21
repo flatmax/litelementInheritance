@@ -1,7 +1,7 @@
 {
-  "name": "litelement-inheritance",
+  "name": "parent-element",
   "version": "1.0.0",
-  "description": "webcomponent to play with litelement and inheritance",
+  "description": "parent component to play with litelement and inheritance",
   "main": "index.js",
   "author": "",
   "license": "UNLICENSED",
@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "@webcomponents/webcomponentsjs": "latest"
+  },
+  "scripts": {
+    "start": "rm -rf node_modules package-lock.json; npm i; polymer serve"
   }
 }
