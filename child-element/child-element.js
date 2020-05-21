@@ -1,5 +1,5 @@
 import { html } from 'lit-element';
-import { ParentElement } from './parent-element.js';
+import { ParentElement } from 'parent-element/parent-element';
 
 export class ChildElement extends ParentElement {
   render(){
@@ -7,6 +7,7 @@ export class ChildElement extends ParentElement {
       we are in child
       <p>
       ${super.render()}
+      ${this.childData}
     `;
   }
 

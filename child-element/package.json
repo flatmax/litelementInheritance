@@ -1,0 +1,19 @@
+{
+  "name": "child-element",
+  "version": "1.0.0",
+  "description": "child component to play with litelement and inheritance",
+  "main": "index.js",
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "lit-element": "^2.2.1",
+    "parent-element": "^1.0.0"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "latest"
+  },
+  "scripts": {
+    "preinstall": "cd ../parent-element; npm link; cd ../child-element; npm link parent-element",
+    "start": "rm -rf node_modules package-lock.json; npm i; polymer serve"
+  }
+}
