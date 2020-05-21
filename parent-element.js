@@ -3,10 +3,6 @@ import { LitElement, html } from 'lit-element';
 export class ParentElement extends LitElement {
   render(){
     return html`
-      <style>
-        :host { display: block; }
-        :host([hidden]) { display: none; }
-      </style>
       we are in parent
       <p>
       ${this.name}
