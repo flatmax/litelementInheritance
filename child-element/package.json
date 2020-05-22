@@ -6,7 +6,6 @@
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
-    "lit-element": "^2.2.1",
     "parent-element": "^1.0.0"
   },
   "devDependencies": {
@@ -14,6 +13,6 @@
   },
   "scripts": {
     "preinstall": "cd ../parent-element; npm link; cd ../child-element; npm link parent-element",
-    "start": "rm -rf node_modules package-lock.json; npm i; npm dedupe; polymer serve"
+    "start": "rm -rf node_modules package-lock.json; npm i; mv -f node_modules/parent-element/node_modules/* node_modules/; polymer serve"
   }
 }
