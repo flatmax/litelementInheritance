@@ -1,14 +1,13 @@
-# Case
-We have several local lit-element based libraries to be installed on many projects. We have done this approach since polymer v3 to collect our internal reusable elements.
+# This repo
 
-It has been long issue since polymer v3 where we need to be struggling with duplicate or nested libraries. On polymer v3, we solved this issue with several solution such as custom script for pre-install, deduping-fix and npm dedupe
+This repo demonstrates problems with nesting inherited elements. When you serve this repo and view it in the browser, you get "[object Object]" instead of the intended render.
 
-# Expectation
-We migrated to lit-element to improve our development and find new spirit. One thing of our expectations was hopefully the duplication issue will be gone. So it will make simplify the development.
+The master branch will render "[object Object]"
+The branch dedupeExample renders as expected. This dedupeExample branch uses dedupe to remove node_modules nesting and the problems goes away.
 
-However, We still need npm dedupe every succeed install the packages. If possible - as we integrate lit-element We want to move away from dedupe
+All html and js code is the same. The only difference between the branches master and dedupeExample is the structure of the node_modules directory.
 
-## serve the demo
+# serve the demo
 
 ```
 cd child-element
