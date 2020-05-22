@@ -1,5 +1,4 @@
-import { html } from 'lit-element';
-import { ParentElement } from 'parent-element/parent-element';
+import { ParentElement, html } from 'parent-element/parent-element';
 
 export class ChildElement extends ParentElement {
   render(){

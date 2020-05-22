@@ -1,4 +1,5 @@
 import { LitElement, html } from 'lit-element';
+export { html };
 
 export class ParentElement extends LitElement {
   render(){
