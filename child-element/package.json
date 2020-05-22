@@ -14,6 +14,6 @@
   },
   "scripts": {
     "preinstall": "cd ../parent-element; npm link; cd ../child-element; npm link parent-element",
-    "start": "rm -rf node_modules package-lock.json; npm i; npm dedupe; polymer serve"
+    "start": "rm -rf node_modules package-lock.json; npm i; rm -rf node_modules/parent-element/node_modules/lit-element node_modules/parent-element/node_modules/lit-html; polymer serve"
   }
 }
