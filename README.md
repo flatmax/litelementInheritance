@@ -1,16 +1,6 @@
-# webcomponents
-
-
-
-## installation
-
-
-```
-npm i
-```
-
 ## serve the demo
 
 ```
-polymer serve
+cd child-element
+npm start
 ```
